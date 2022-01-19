@@ -3,7 +3,9 @@
 Author: [Paul Lindquist](https://www.linkedin.com/in/paul-lindquist/)
 
 ## Background
-Due to the nature of how electronic music is created – utilizing computers and plugins rather than instruments and live recordings – thousands of new songs are released every day. This presents a challenge for any DJ or any music curator seeking to keep their library current without drowning in new releases. To complicate matters further, the music isn't centralized. Releases are sold on numerous online stores like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/) and [Bandcamp](https://bandcamp.com/) or given away for free on platforms like [Soundcloud](https://soundcloud.com/). It becomes difficult to cultivate...
+Electronic music has a great speed advantage. The music is typically created with computers and plugins rather than instruments and live recordings. It's usally distributed digitally, opting for high-quality .wav, .aiff and .mp3 files over vinyl or CDs. As such, thousands of new songs are released every day. This presents a challenge for any DJ or music curator seeking to keep their library current without drowning in new releases. To complicate matters further, the music isn't centralized. Releases are sold on numerous online stores like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/) and [Bandcamp](https://bandcamp.com/) or given away for free on platforms like [Soundcloud](https://soundcloud.com/). Crate digging has long since moved to the digital world and it's easy to get overwhelmed.
+
+For years, and like any other genre of music, electronic music has been categorized by sub-genres.
 
 ## Overview
 This was very much a passion project. I've DJ'ed electronic music for 13 years and have been a fan of the genre since the 90s.
