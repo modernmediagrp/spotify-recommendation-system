@@ -10,7 +10,7 @@ Like any other genre of music, for years electronic music has been categorized b
 After acquiring music intelligence and data platform *The Echo Nest* in 2014, Spotify began integrating algorithm-based audio analysis, resulting in songs being tagged with audio features such as valence, energy, tempo, etc. Through their [Web API](https://developer.spotify.com/documentation/web-api/), they permit the extraction of these features when calling songs to build out datasets. Along with the tagged sub-genre, this allows for a more detailed categorization and comparison of songs.
 
 ## Overview
-This project explicitly focused on electronic music within Spotify's database. Common sub-genres categorized by both [Every Noise at Once](https://everynoise.com/) and Spotify's own [genre seeds](https://developer.spotify.com/console/get-available-genre-seeds/) within their [recommendation API](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendations) were used to narrow the final dataset.
+This project solely focused on electronic music within Spotify's database. Common sub-genres categorized by both [Every Noise at Once](https://everynoise.com/) and Spotify's own [genre seeds](https://developer.spotify.com/console/get-available-genre-seeds/) within their [recommendation API](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendations) were used to narrow the final dataset.
 
 Spotify was chosen as the singular data-gathering platform for a few reasons:
 1. It's the world's most popular music streaming service with a database of over 70 million songs
@@ -23,7 +23,7 @@ The following Spotify audio features were extracted and used as features for det
 
 Musical features like key and mode were purposefully omitted because there are separate applications (e.g. [Mixed in Key](https://mixedinkey.com/)) that can hard-tag songs with that information, making it available during song selection while DJ'ing. Also, and perhaps more importantly, making recommendations based on the key can lead to songs sounding too similar. 
 
-I served as my own stakeholder for this project. Personal domain knowledge was used to determine how valid recommendations were. This was very much a passion project. I've DJ'ed electronic music for 13 years and have been a fan of the genre since the 90s.
+I served as my own stakeholder for this project. Personal domain knowledge was used to determine validity of the recommendations. I've DJ'ed electronic music for 13 years and have been a fan of the genre since the 90s.
 
 ## Objective
 TBD
@@ -35,7 +35,7 @@ Data was aggregated from multiple sources:
 - [Multiple](https://www.kaggle.com/christinobarbosa/spotify-dataset?select=Spotify_dataset.csv) [Kaggle datasets](https://www.kaggle.com/vatsalmavani/spotify-dataset?select=data) that contained necessary genre tagging and audio feature listings (energy, danceability, etc.)
 
 ## Methods
-This project used a 
+This project exclusively used content-based filtering to build a recommendation system. Similarity was calculated using K-Nearest Neighbors (KNN), cosine similarity and sigmoid kernel.
 
 ## Results
 TBD
