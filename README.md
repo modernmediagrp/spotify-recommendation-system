@@ -15,7 +15,7 @@ This project solely focused on electronic music within Spotify's database. Commo
 Spotify was chosen as the singular data-gathering platform for a few reasons:
 1. It's the world's most popular music streaming service with a database of over 70 million songs
 2. The algorithm-based audio analysis (song features) provided unmatched opportunity for song comparison and recommendation
-3. Their Web API is accessible and well-documented
+3. Their [Web API](https://developer.spotify.com/documentation/web-api/) is accessible and well-documented
 4. Songs are tagged with identifiers like ID and URI for organized tracking
 
 The following Spotify audio features were extracted and used as features for determining similarity for recommendation. Refer to the [documentation](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features) for an in-depth explanation of each:
