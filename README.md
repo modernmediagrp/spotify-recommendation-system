@@ -1,5 +1,5 @@
 ![banner](./images/knobs.jpeg)
-# *Live DJ Assist: Using Spotify to Build a Recommendation System for DJ'ing Electronic Music*
+# *Live DJ Assist: Using Spotify to Build a Recommendation System for DJ'ing Electronic Dance Music*
 Author: [Paul Lindquist](https://www.linkedin.com/in/paul-lindquist/)
 
 ## Background
