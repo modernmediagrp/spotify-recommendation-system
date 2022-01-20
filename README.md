@@ -35,7 +35,7 @@ Data was aggregated from multiple sources:
 - [Multiple](https://www.kaggle.com/christinobarbosa/spotify-dataset?select=Spotify_dataset.csv) [Kaggle datasets](https://www.kaggle.com/vatsalmavani/spotify-dataset?select=data) that contained necessary genre tagging and audio feature listings (energy, danceability, etc.)
 
 ## Methods
-This project exclusively used content-based filtering to build a recommendation system. Similarity was calculated using K-Nearest Neighbors (KNN), cosine similarity and sigmoid kernel. Exploratory data analysis and viusalizations were conducted on the final, cleaned data.
+This project exclusively used content-based filtering to build a recommendation system. Similarity was calculated using K-Nearest Neighbors (KNN), cosine similarity and sigmoid kernel. Exploratory data analysis and visualizations were conducted on the final, cleaned data.
 
 ## Results
 TBD
