@@ -5,12 +5,12 @@ Author: [Paul Lindquist](https://www.linkedin.com/in/paul-lindquist/)
 ## Background
 Electronic dance music is overwhelmingly created with computers and plugins rather than instruments and live recordings. It's typically distributed digitally, opting for high-quality .wav, .aiff and .mp3 files over CDs and vinyl. As such, thousands of new songs are released every day. This presents a challenge for any DJ or music curator seeking to keep their library current without drowning in new releases. To complicate matters further, the music isn't centralized. Releases are sold on numerous online stores like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/) and [Bandcamp](https://bandcamp.com/) or given away for free on platforms like [Soundcloud](https://soundcloud.com/). Crate digging has long since moved to the digital space and it's easy to get overwhelmed.
 
-Like any other genre of music, electronic dance music has, for years, been categorized by sub-genres. Generally, the sub-genres were defined by features like tempo (beats per minute/BPM), mood and the instrument samples used. Orchestral strings weren't heavily utilized in Jungle music, Trance rarely dipped below 122 beats per minute, etc. But as the music evolved and artists implemented elements from different sub-genres, classifying songs became both cumbersome and inaccurate. There needed to be a new way to analyze songs irrespective of sub-genres. Enter Spotify...
+Like any other genre of music, electronic dance music has historically been categorized by sub-genres. Generally, they were defined by features like tempo (beats per minute/BPM), mood and the instrument samples used. Orchestral strings weren't heavily utilized in Jungle music, Trance rarely dipped below 122 beats per minute, etc. But as the music evolved and artists implemented elements from different sub-genres, classifying songs became both cumbersome and antiquated. There needed to be a new way to analyze songs irrespective of sub-genres and by the early 2010s, there was a leader in that space.
 
-After acquiring music intelligence and data platform *The Echo Nest* in 2014, Spotify began integrating algorithm-based audio analysis, resulting in songs being tagged with audio features such as valence, energy, tempo, etc. Through their [Web API](https://developer.spotify.com/documentation/web-api/), they permit the extraction of these features when calling songs to build out datasets. Along with the tagged sub-genre, this allows for a more detailed categorization and comparison of songs.
+Spotify acquired music intelligence and data platform *The Echo Nest* in 2014. Shortly thereafter, they began integrating *TEN's* algorithm-based audio analysis and tagging songs with audio features such as valence, energy, tempo, etc. Through their [Web API](https://developer.spotify.com/documentation/web-api/), Spotify began permitting the extraction of these features when calling songs to build out datasets. Along with the tagged sub-genres, this allowed for a more detailed categorization and comparison of songs.
 
 ## Overview
-This project solely focused on electronic music within Spotify's database. Common sub-genres categorized by both [Every Noise at Once](https://everynoise.com/) and Spotify's own [genre seeds](https://developer.spotify.com/console/get-available-genre-seeds/) within their [recommendation API](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendations) were used to narrow the final dataset.
+This project leveraged those features and focused solely on electronic dance music within Spotify's database. Common sub-genres categorized by both [Every Noise at Once](https://everynoise.com/) and Spotify's own [genre seeds](https://developer.spotify.com/console/get-available-genre-seeds/) within their [recommendation API](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendations) were used to narrow the final dataset.
 
 Spotify was chosen as the singular data-gathering platform for a few reasons:
 1. It's the world's most popular music streaming service with a database of over 70 million songs
@@ -19,14 +19,16 @@ Spotify was chosen as the singular data-gathering platform for a few reasons:
 4. Songs are tagged with identifiers like ID and URI for organized tracking
 
 The following Spotify audio features were extracted and used as features for determining similarity for recommendation. Refer to the [documentation](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features) for an in-depth explanation of each:
-- Acousticness, danceability, energy, instrumentalness, liveness, loudness, speechiness, tempo (BPM) and valence
+- Acousticness, danceability, energy, instrumentalness, liveness, loudness, speechiness, tempo (BPM), valence
 
-Musical features like key and mode were purposefully omitted because there are separate applications (e.g. [Mixed in Key](https://mixedinkey.com/)) that can hard-tag songs with that information, making it available during song selection while DJ'ing. Also, and perhaps more importantly, making recommendations based on the key can lead to songs sounding too similar. 
+Musical features like key and mode were purposefully omitted because there are separate third-party applications (e.g. [Mixed in Key](https://mixedinkey.com/)) that can hard-tag songs with that information. Many DJs do this and will already have it available during song selection. Also, and perhaps more importantly, making recommendations based on a song's key can lead to a string of songs that sound too familiar. Over time, this tends to lead to a tired listening experience.
 
-I served as my own stakeholder for this project. Personal domain knowledge was used to determine validity of the recommendations. I've DJ'ed electronic music for 13 years and have been a fan of the genre since the 90s.
+## Business Objective
+This project set out to make a recommendation system for electronic dance music, specifically with live DJ'ing in mind. It should assist DJs with tracklist preparation or live DJ performance. Sometimes only 1 song is needed to fill out a set, or create a bridge between 2 songs or inspire a line of thinking that allows the DJ to come up with the next song on their own.
 
-## Objective
-TBD
+Ideally, this recommendation system would be deployed to a web application or mobile app so it could be easily accessed and utilized during live DJ'ing.
+
+I served as my own stakeholder for this project. Personal domain knowledge was used to determine validity of the recommendations. I've DJ'ed electronic dance music for 13 years and have played countless live mixes. From 2013-2019, I co-founded, operated and resident DJ'ed an [electronic music podcast](https://podcasts.apple.com/us/podcast/electric-retox-electronic-music-podcast/id733126312), amassing over 72,000 subscribers. As a casual listener, I've been a fan of the genre since the 90s.
 
 ## Data
 Data was aggregated from multiple sources:
@@ -41,6 +43,9 @@ This project exclusively used content-based filtering to build a recommendation 
 TBD
 
 ## Conclusions
+TBD
+
+## Limitations
 TBD
 
 ## Next Steps
