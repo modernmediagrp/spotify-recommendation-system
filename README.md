@@ -24,9 +24,9 @@ The following Spotify audio features were extracted and used as features for det
 Musical features like key and mode were purposefully omitted because there are separate third-party applications (e.g. [Mixed in Key](https://mixedinkey.com/)) that can hard-tag songs with that information. Many DJs do this and will already have it available during song selection. Also, and perhaps more importantly, making recommendations based on a song's key can lead to a string of songs that sound too familiar. Over time, this tends to lead to a tired listening experience.
 
 ## Business Objective
-This project set out to make a recommendation system for electronic dance music, specifically with live DJ'ing in mind. It should assist DJs with tracklist preparation or live DJ performance. Sometimes only 1 song is needed to fill out a set, or create a bridge between 2 songs or inspire a line of thinking that allows the DJ to come up with the next song on their own.
+This project set out to make a recommendation system for electronic dance music, specifically with live DJ'ing in mind. It should assist DJs with tracklist preparation or live DJ performance. Often only 1 song is needed to fill out a set, or create a bridge between 2 songs or inspire a line of thinking that allows the DJ to come up with the next song on their own. This recommendation system can assist that process.
 
-Ideally, this recommendation system would be deployed to a web application or mobile app so it could be easily accessed and utilized during live DJ'ing.
+Sometimes a DJ wants variety and would like to play a song that's categorized by a different sub-genre than the song currently being played. The final model function gives the option to provide recommendations within the same genre or across all genres.
 
 I served as my own stakeholder for this project. Personal domain knowledge was used to determine validity of the recommendations. I've DJ'ed electronic dance music for 13 years and have played countless live mixes. From 2013-2019, I co-founded, operated and resident DJ'ed an [electronic music podcast](https://podcasts.apple.com/us/podcast/electric-retox-electronic-music-podcast/id733126312), amassing over 72,000 subscribers. As a casual listener, I've been a fan of the genre since the 90s.
 
