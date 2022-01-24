@@ -52,7 +52,7 @@ While the scores of each algorithm or function are used to create the "mathemati
 
 ***Please note:*** *In the video comparisons below, the reference song is played before each recommendation. This is so the ear can make a direct comparison with the reference song rather than the other recommendations. After all, live DJ's are only looking for a next-song recommendation while another song is currently playing.*
 
-The first recommended song is so similar to the reference that DJ's have made mashups of the 2 songs. Everything about that recommendation is spot-on. The second recommended song captures the essence and energy of the reference while not sounding the exact same. Interestingly, the third recommendation is a song from the same artist released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being found in the audio features.
+The first recommended song is so similar to the reference that DJ's have made mashups of the 2 songs. Everything about that recommendation is spot-on. The second recommended song captures the essence and energy of the reference while not sounding the exact same. Interestingly, the third recommendation is a song from the same artist released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being identified within the audio features.
 
 https://user-images.githubusercontent.com/92393233/150801538-f8de7952-568c-4539-a5c9-7e9a8cc540dc.mp4
 
