@@ -61,7 +61,7 @@ A bit of a different approach is used for this next batch of recommendations. To
 https://user-images.githubusercontent.com/92393233/150801555-a05639d5-7298-4dbc-bd3b-49914cdb5398.mp4
 
 ## Conclusions
-The recommendation system is quite good. It's able to provide a variety of recommendations that include both songs with exactness in sound and songs with similar energy and valence. Given the number of results within the scope of the provided reference song, there's a strong likelihood a DJ would be able to select a song from the list of recommendations.
+The recommendation system is quite good. It's able to provide a variety of recommendations that include both songs with exactness in sound and songs with similar energy and valence. Given the number of results within the scope of the provided reference song, there's a strong likelihood a DJ would be able to select a song from the list of recommendations. Remember, it only takes 1 usable song for the recommendation system to be considered a success.
 
 ## Limitations
 There are a few limitations encountered over the course of this project:
