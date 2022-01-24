@@ -44,7 +44,7 @@ The final dataset has just under 23,000 songs spanning 128 sub-genres. It comes 
 
 ![all_songs](./images/scatter_tl.jpg)
 
-Recommendations are made by testing 8 different modeling algorithms and functions, all similarity and distance-based. Cosine similarity and K-Nearest Neighbors yield the most consistent results while the sigmoid kernel provided some valid recommendations with a bit of variety. The remaining 5 kernel functions (x², linear, polynomial, etc.) do not produce many varying recommendations from those of cosine similarity of sigmoid kernel so they aren't used in the final model function.
+Recommendations are made by testing 8 different modeling algorithms and functions, all similarity and distance-based. Cosine similarity and K-Nearest Neighbors yield the most consistent results while the sigmoid kernel provides some valid recommendations with a bit of variety. The remaining 5 kernel functions (x², linear, polynomial, etc.) do not produce many varying recommendations from those of cosine similarity of sigmoid kernel so they aren't used in the final model function.
 
 ![models](./images/models.png)
 
