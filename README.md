@@ -26,7 +26,7 @@ Musical features like key and mode are purposefully omitted because there are se
 ## Business Objective
 This project set out to make a recommendation system for electronic dance music, specifically with live DJ'ing in mind. It can assist DJs with tracklist preparation or live DJ performance. Often only 1 song is needed to fill out a set, create a bridge between 2 songs or inspire a line of thinking that allows the DJ to come up with the next song on their own. This recommendation system can assist that process.
 
-Sometimes a DJ wants variety and would like to play a song that's categorized by a different sub-genre than the song currently being played. The final model function gives the option to provide recommendations within the same genre or across all genres.
+Sometimes a DJ wants variety and would like to play a song that's categorized by a different sub-genre than the song currently being played. The final model function gives the option to provide recommendations within the same sub-genre or across all sub-genres.
 
 I serve as my own stakeholder for this project. Personal domain knowledge is used to determine validity of the recommendations. I've DJ'ed electronic dance music for 13 years and have played countless live mixes. From 2013-2019, I co-founded, operated and resident DJ'ed an [electronic music podcast](https://podcasts.apple.com/us/podcast/electric-retox-electronic-music-podcast/id733126312), amassing over 72,000 subscribers. As a casual listener, I've been a fan of the genre since the 90s.
 
@@ -34,7 +34,7 @@ I serve as my own stakeholder for this project. Personal domain knowledge is use
 Data is aggregated from multiple sources:
 - API calls of Spotify's [Web API](https://developer.spotify.com/documentation/web-api/) using their [genre seeds](https://developer.spotify.com/console/get-available-genre-seeds/)
 - A [raw dataset](https://www.kaggle.com/nikitricky/every-noise-at-once?select=songs.csv) of approx. 500k songs referencing [Every Noise at Once](https://everynoise.com/)'s *[The Sound of Everything](https://open.spotify.com/playlist/69fEt9DN5r4JQATi52sRtq)* Spotify playlist
-- [Multiple](https://www.kaggle.com/christinobarbosa/spotify-dataset?select=Spotify_dataset.csv) [Kaggle datasets](https://www.kaggle.com/vatsalmavani/spotify-dataset?select=data) that contained necessary genre tagging and audio feature listings (energy, danceability, etc.)
+- [Multiple](https://www.kaggle.com/christinobarbosa/spotify-dataset?select=Spotify_dataset.csv) [Kaggle datasets](https://www.kaggle.com/vatsalmavani/spotify-dataset?select=data) that contained necessary sub-genre tagging and audio feature listings (energy, danceability, etc.)
 
 ## Methods
 This project exclusively used content-based filtering to build a recommendation system. Similarity is calculated using K-Nearest Neighbors (KNN), cosine similarity and sigmoid kernel. Exploratory data analysis and visualizations are conducted on the final, cleaned data.
@@ -61,16 +61,23 @@ A bit of a different approach is used for this next batch of recommendations. To
 https://user-images.githubusercontent.com/92393233/150801555-a05639d5-7298-4dbc-bd3b-49914cdb5398.mp4
 
 ## Conclusions
-TBD
+The recommendation system is quite good. It's able to provide a variety of recommendations that include both songs with exactness in sound and songs with similar energy and valence. Given the number of results within the scope of the provided reference song, there's a strong likelihood a DJ would be able to select a song from the list of recommendations.
 
 ## Limitations
-TBD
+There are a few limitations encountered over the course of this project:
+1. The data relies heavily on the original tagging of audio features and sub-genre for making recommendations. If, for whatever reason, a song's sub-genre, danceability, etc. wasn't intially tagged properly, the recommendations will reflect those deficiencies.
+2. The final dataset only includes just under 23,000 songs. This is likely a severe underrepresentation of electronic dance music from Spotify's 70 million song database.
+3. The final dataset is also static, in that it includes data from other raw datasets and isn't exclusively derived from Spotify API calls. Over time, the data will become outdated and new releases won't be represented in the data, both for reference and recommendation.
+4. Recommendations for sub-genres like Tech House and Techno, where audio features vary and songs are harder to classify, aren't very strong. It's unsurprising given the ambiguity of the sub-genres' features but it still yields weaker recommendations.
 
 ## Next Steps
-TBD
+Should this project be continued, the following next steps should be explored:
+1. Expanding the data through additional Spotify API calls
+2. Deploying the final model function to a mobile app, or at least a mobile-responsive application like [Streamlit](https://streamlit.io/), so DJ's can access recommendations on their phones while mixing
+3. Building a new dataset using an electronic music-specific store like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/), etc.
 
 ## For More Information
-Please review the full analysis in my Jupyter Notebook or presentation deck.
+Please review the full analysis in my [Jupyter Notebook](./main_notebook.ipynb) or [presentation deck](./project_presentation.pdf).
 
 For additional questions, feel free to [contact me](https://www.linkedin.com/in/paul-lindquist/).
 
