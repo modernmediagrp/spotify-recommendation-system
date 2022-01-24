@@ -44,11 +44,11 @@ The final dataset had just under 23,000 songs spanning 128 sub-genres. It came a
 
 ![all_songs](./images/scatter_tl.jpg)
 
-The final function featured 3 models: k-Nearest Neighbors, sigmoid kernel and cosine similarity.
+Recommendations were made by testing 8 different modeling algorithms and functions. They were all similarity and distance-based. Cosine similarity and k-Nearest Neighbors yielded the most consistent results while the sigmoid kernel provided some valid recommendations with a bit of variety. The remaining 5 kernel functions (x², linear, polynomial, etc.) did not produce many varying recommendations from those of cosine similarity of sigmoid kernel so they weren't used in the final model function.
 
 ![models](./images/models.png)
 
-Analysis 1 TBD
+While the scores of each algorithm or function were used to create the "mathematically most similar" recommendations, what really mattered is how the songs sounded when compared to the provided reference song. For this, there's no exact...
 
 https://user-images.githubusercontent.com/92393233/150801538-f8de7952-568c-4539-a5c9-7e9a8cc540dc.mp4
 
