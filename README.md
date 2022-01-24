@@ -40,7 +40,9 @@ Data was aggregated from multiple sources:
 This project exclusively used content-based filtering to build a recommendation system. Similarity was calculated using K-Nearest Neighbors (KNN), cosine similarity and sigmoid kernel. Exploratory data analysis and visualizations were conducted on the final, cleaned data.
 
 ## Results
-TBD
+The final dataset had just under 23,000 songs spanning 128 sub-genres. Filtering by the energy and danceability audio features, it comes as no surprise that the majority of songs within the dataset 
+
+![all_songs](./images/scatter_tl.jpg)
 
 ## Conclusions
 TBD
