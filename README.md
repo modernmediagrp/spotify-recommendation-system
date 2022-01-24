@@ -65,7 +65,7 @@ The recommendation system is quite good. It's able to provide a variety of recom
 
 ## Limitations
 There are a few limitations encountered over the course of this project:
-1. The data relies heavily on the original tagging of audio features and sub-genre for making recommendations. If, for whatever reason, a song's sub-genre, danceability, etc. wasn't intially tagged properly, the recommendations will reflect those deficiencies.
+1. The data relies heavily on the original tagging of audio features and sub-genre for making recommendations. If, for whatever reason, a song's sub-genre, danceability, etc. wasn't initially tagged properly, the recommendations will reflect those deficiencies.
 2. The final dataset only includes just under 23,000 songs. This is likely a severe underrepresentation of electronic dance music from Spotify's 70 million song database.
 3. The final dataset is also static, in that it includes data from other raw datasets and isn't exclusively derived from Spotify API calls. Over time, the data will become outdated and new releases won't be represented in the data, both for reference and recommendation.
 4. Recommendations for sub-genres like Tech House and Techno, where audio features vary and songs are harder to classify, aren't very strong. It's unsurprising given the ambiguity of the sub-genres' features but it still yields weaker recommendations.
