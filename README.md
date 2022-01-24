@@ -46,7 +46,7 @@ The final dataset had just under 23,000 songs spanning 128 sub-genres. It came a
 
 The final function featured 3 models: k-Nearest Neighbors, sigmoid kernel and cosine similarity.
 
-![models](./images/modeling.png)
+![models](./images/models.png)
 
 Let's take a look...
 
