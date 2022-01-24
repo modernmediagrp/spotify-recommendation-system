@@ -5,12 +5,12 @@ Author: [Paul Lindquist](https://www.linkedin.com/in/paul-lindquist/)
 ## Background
 Electronic dance music is overwhelmingly created with computers and plugins rather than instruments and live recordings. It's typically distributed digitally, opting for high-quality .wav, .aiff and .mp3 files over CDs and vinyl. As such, thousands of new songs are released every day. This presents a challenge for any DJ or music curator seeking to keep their library current without drowning in new releases. To complicate matters further, the music isn't centralized. Releases are sold on numerous online stores like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/) and [Bandcamp](https://bandcamp.com/) or given away for free on platforms like [Soundcloud](https://soundcloud.com/). Crate digging has long since moved to the digital space and it's easy to get overwhelmed.
 
-Like any other genre of music, electronic dance music has historically been categorized by sub-genres. Generally, they were defined by features like tempo (beats per minute/BPM), mood and the instrument samples used. Orchestral strings weren't heavily utilized in Jungle music, Trance rarely dipped below 122 beats per minute, etc. But as the music evolved and artists implemented elements from different sub-genres, classifying songs became both cumbersome and antiquated. There needed to be a new way to analyze songs irrespective of sub-genres and by the early 2010s, there was a leader in that space.
+Like any other genre of music, electronic dance music has historically been categorized by sub-genres. Generally, those sub-genres were defined by features like tempo (beats per minute/BPM), mood and the types of instrument samples used. Orchestral strings weren't heavily utilized in Jungle music, Trance rarely dipped below 122 beats per minute, etc. But as the music evolved and artists implemented elements from different sub-genres, classifying songs became both cumbersome and antiquated. There needed to be a new way to analyze songs irrespective of sub-genres and by the early 2010s, there was a leader in that space.
 
-Spotify acquired music intelligence and data platform *The Echo Nest* in 2014. Shortly thereafter, they began integrating *TEN*'s algorithm-based audio analysis and tagging songs with audio features such as valence, energy, tempo, etc. Through their [Web API](https://developer.spotify.com/documentation/web-api/), Spotify began permitting the extraction of these features when calling songs to build out datasets. Along with the tagged sub-genres, this allowed for a more detailed categorization and comparison of songs.
+Spotify acquired that leader, music intelligence and data platform *The Echo Nest*, in 2014. Shortly thereafter, they began integrating *TEN*'s algorithm-based audio analysis and tagging songs with audio features such as valence, energy, danceability, etc. Through their [Web API](https://developer.spotify.com/documentation/web-api/), Spotify began permitting the extraction of these features when building out datasets. Along with the tagged sub-genres, this allowed for a more detailed categorization and comparison of songs.
 
 ## Overview
-This project leveraged those features and focused solely on electronic dance music within Spotify's database. Common sub-genres categorized by both [Every Noise at Once](https://everynoise.com/) and Spotify's own [genre seeds](https://developer.spotify.com/console/get-available-genre-seeds/) within their [recommendation API](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendations) were used to narrow the final dataset.
+This project leveraged those audio features and focused solely on electronic dance music within Spotify's database. Common sub-genres categorized by both [Every Noise at Once](https://everynoise.com/) and Spotify's own [genre seeds](https://developer.spotify.com/console/get-available-genre-seeds/) within their [recommendation API](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendations) were used to narrow the final dataset.
 
 Spotify was chosen as the singular data-gathering platform for a few reasons:
 1. It's the world's most popular music streaming service with a database of over 70 million songs
@@ -40,14 +40,17 @@ Data was aggregated from multiple sources:
 This project exclusively used content-based filtering to build a recommendation system. Similarity was calculated using K-Nearest Neighbors (KNN), cosine similarity and sigmoid kernel. Exploratory data analysis and visualizations were conducted on the final, cleaned data.
 
 ## Results
-The final dataset had just under 23,000 songs spanning 128 sub-genres. Filtering by the energy and danceability audio features, it comes as no surprise that the majority of songs within the dataset 
+The final dataset had just under 23,000 songs spanning 128 sub-genres. It came as no surprise that the majority of songs within the dataset scored high in both energy and danceability. Both features somewhat define electronic dance music.
 
 ![all_songs](./images/scatter_tl.jpg)
 
+The final function featured 3 models: k-Nearest Neighbors, sigmoid kernel and cosine similarity.
+
+![models](./images/modeling.png)
+
 Let's take a look...
 
-https://user-images.githubusercontent.com/92393233/150712875-9bf73962-4419-415d-a124-42f7972f3ad4.mp4
-
+https://user-images.githubusercontent.com/92393233/150714451-2e15d60a-d65d-49da-a445-620808c50071.mp4
 
 ## Conclusions
 TBD
