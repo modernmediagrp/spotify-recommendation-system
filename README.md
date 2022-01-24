@@ -48,13 +48,13 @@ The final function featured 3 models: k-Nearest Neighbors, sigmoid kernel and co
 
 ![models](./images/models.png)
 
-Analysis 1
+Analysis 1 TBD
 
-https://user-images.githubusercontent.com/92393233/150725573-f2b2340b-6329-4882-80cf-31d2f4709f4a.mp4
+https://user-images.githubusercontent.com/92393233/150801538-f8de7952-568c-4539-a5c9-7e9a8cc540dc.mp4
 
-Analysis 2
+Analysis 2 TBD
 
-https://user-images.githubusercontent.com/92393233/150725683-8c88b0d9-8ad5-47af-a641-57ef35a900a4.mp4
+https://user-images.githubusercontent.com/92393233/150801555-a05639d5-7298-4dbc-bd3b-49914cdb5398.mp4
 
 ## Conclusions
 TBD
