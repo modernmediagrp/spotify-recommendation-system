@@ -83,7 +83,7 @@ There are a few limitations encountered over the course of this project:
 Should this project be continued, the following next steps should be explored:
 1. Expanding the data through additional Spotify API calls
 2. Deploying the final model function to a mobile app, or at least a mobile-responsive application like [Streamlit](https://streamlit.io/), so DJ's can access recommendations on their phones while mixing
-3. Building a new dataset using an electronic music-specific store like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/), etc.
+3. Building a new dataset, through API calls or web scraping, using an electronic music-specific store like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/), etc.
 
 ## For More Information
 Please review the full analysis in my [Jupyter Notebook](./main_notebook.ipynb) or [presentation deck](./project_presentation.pdf).
