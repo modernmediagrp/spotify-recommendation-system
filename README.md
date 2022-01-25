@@ -54,9 +54,9 @@ Recommendations are made by testing 8 different modeling algorithms and function
 While the scores of each algorithm or function are used to create the "mathematically most similar" recommendations, what really matters is how the songs sound when compared to the provided reference song. As such, the results are somewhat subjective.
 
 ### The Recommendations
-***Please note:*** *In the video comparisons below, the reference song is repeatedly played before each recommendation. This is so the ear can make a direct comparison with the reference song rather than the other recommendations. After all, live DJ's are only looking for a next-song recommendation while another song is currently playing.*
+***Please note:*** *In the video comparisons below, the reference song is repeatedly played before each recommendation. This is so the ear can make a direct comparison with the reference song rather than the other recommendations. After all, live DJs are only looking for a next-song recommendation while another song is currently playing.*
 
-1. The first recommended song is so similar to the reference that DJ's have made mashups of the 2 songs. From the similar instrumentation to the nearly-identical syncopated arpeggio, everything about this recommendation is spot-on.
+1. The first recommended song is so similar to the reference that DJs have made mashups of the 2 songs. From the similar instrumentation to the nearly-identical syncopated arpeggio, everything about this recommendation is spot-on.
 2. The second recommended song captures the essence and energy of the reference while not sounding the exact same.
 3. Interestingly, the third recommendation is a song from the same artist released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being identified within the audio features.
 
@@ -82,7 +82,7 @@ There are a few limitations encountered over the course of this project:
 ## Next Steps
 Should this project be continued, the following next steps should be explored:
 1. Expanding the data through additional Spotify API calls
-2. Deploying the final model function to a mobile app, or at least a mobile-responsive application like [Streamlit](https://streamlit.io/), so DJ's can access recommendations on their phones while mixing
+2. Deploying the final model function to a mobile app, or at least a mobile-responsive application like [Streamlit](https://streamlit.io/), so DJs can access recommendations on their phones while mixing
 3. Building a new dataset, through API calls or web scraping, using an electronic music-specific store like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/), etc.
 
 ## For More Information
