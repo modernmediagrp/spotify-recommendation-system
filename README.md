@@ -40,16 +40,20 @@ Data is aggregated from multiple sources:
 This project exclusively uses content-based filtering to build a recommendation system. Similarity is calculated using K-Nearest Neighbors (KNN), cosine similarity and sigmoid kernel. Exploratory data analysis and visualizations are conducted on the final, cleaned data.
 
 ## Results
+
+### The Dataset
 The final dataset has just under 23,000 songs spanning 128 sub-genres. It comes as no surprise that the majority of songs within the dataset score high in both energy and danceability. Both features somewhat define electronic dance music.
 
 ![all_songs](./images/scatter_tl.jpg)
 
+### Modeling
 Recommendations are made by testing 8 different modeling algorithms and functions, all similarity and distance-based. Cosine similarity and K-Nearest Neighbors yield the most consistent results while the sigmoid kernel provides some valid recommendations with a bit of variety. The remaining 5 kernel functions (x², linear, polynomial, etc.) do not produce many varying recommendations from those of cosine similarity of sigmoid kernel so they aren't used in the final model function.
 
 ![models](./images/models.png)
 
 While the scores of each algorithm or function are used to create the "mathematically most similar" recommendations, what really matters is how the songs sound when compared to the provided reference song. As such, the results are somewhat subjective.
 
+### The Recommendations
 ***Please note:*** *In the video comparisons below, the reference song is played before each recommendation. This is so the ear can make a direct comparison with the reference song rather than the other recommendations. After all, live DJ's are only looking for a next-song recommendation while another song is currently playing.*
 
 The first recommended song is so similar to the reference that DJ's have made mashups of the 2 songs. Everything about that recommendation is spot-on. The second recommended song captures the essence and energy of the reference while not sounding the exact same. Interestingly, the third recommendation is a song from the same artist released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being identified within the audio features.
