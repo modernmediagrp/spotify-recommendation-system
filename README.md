@@ -56,16 +56,21 @@ While the scores of each algorithm or function are used to create the "mathemati
 ### The Recommendations
 ***Please note:*** *In the video comparisons below, the reference song is repeatedly played before each recommendation. This is so the ear can make a direct comparison with the reference song rather than the other recommendations. After all, live DJ's are only looking for a next-song recommendation while another song is currently playing.*
 
-The first recommended song is so similar to the reference that DJ's have made mashups of the 2 songs. Everything about that recommendation is spot-on. The second recommended song captures the essence and energy of the reference while not sounding the exact same. Interestingly, the third recommendation is a song from the same artist released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being identified within the audio features.
+1. The first recommended song is so similar to the reference that DJ's have made mashups of the 2 songs. From the similar instrumentation to the nearly-identical syncopated arpeggio, everything about this recommendation is spot-on.
+2. The second recommended song captures the essence and energy of the reference while not sounding the exact same.
+3. Interestingly, the third recommendation is a song from the same artist released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being identified within the audio features.
 
 https://user-images.githubusercontent.com/92393233/150801538-f8de7952-568c-4539-a5c9-7e9a8cc540dc.mp4
 
-A bit of a different approach is used for this next batch of recommendations. To test robustness, the final model function is input to recommend songs across all genres. Notice the reference song has a piano-heavy, Disco-infused-almost-throwback feel to it. Its energy is upbeat and its valence is positive. The first recommendation carries that same positivity and upbeat energy. Like the reference song, it also has vocals and a Disco-heavy bassline. The second recommendation sounds the most dissimilar of all the recommendations. It has a few filtered instrumentation elements like the reference song but it's hard to describe its energy as upbeat or its valence as positive. The third recommendation also comes from quite a different sub-genre but its sound is energetic, positive and it too features vocals. It would be a nice change of pace from the reference song without sounding like there was no connection.
+A bit of a different approach is used for this next batch of recommendations. To test robustness, the final model function is input to recommend songs across all genres. Notice the reference song has a piano-heavy, Disco-infused-almost-throwback feel to it. Its energy is upbeat and its valence is positive.
+1. The first recommendation carries that same positivity and upbeat energy. Like the reference song, it also has vocals and a Disco-heavy bassline.
+2. The second recommendation sounds the most dissimilar of all the recommendations. It has a few filtered instrumentation elements like the reference song but it's hard to describe its energy as upbeat or its valence as positive.
+3. The third recommendation also comes from quite a different sub-genre but its sound is energetic, positive and it too features vocals. It would be a nice change of pace from the reference song without sounding like there was no connection.
 
 https://user-images.githubusercontent.com/92393233/150801555-a05639d5-7298-4dbc-bd3b-49914cdb5398.mp4
 
 ## Conclusions
-The recommendation system is quite good. It's able to provide a variety of recommendations that include both songs with exactness in sound and songs with similar energy and valence. Given the number of results within the scope of the provided reference song, there's a strong likelihood a DJ would be able to select a song from the list of recommendations. Remember, it only takes 1 usable song for the recommendation system to be considered a success.
+The recommendation system is quite good. It's able to provide a variety of recommendations that include both songs with exactness in sound and songs with similar energy, danceability and valence. Given the number of results within the scope of the provided reference song, there's a strong likelihood a DJ would be able to select a song from the list of recommendations. Remember, it only takes 1 usable song for the recommendation system to successfully achieve its objective.
 
 ## Limitations
 There are a few limitations encountered over the course of this project:
