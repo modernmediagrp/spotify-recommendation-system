@@ -6,7 +6,7 @@
 
 """
 Define an authorization function to run Spotify API.
-Utilizing the Tekore (https://github.com/felix-hilden/tekore)
+Utilizing Tekore (https://github.com/felix-hilden/tekore)
 to navigate Spotify's API.
 """
 
