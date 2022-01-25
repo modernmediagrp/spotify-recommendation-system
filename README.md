@@ -94,8 +94,10 @@ For additional questions, feel free to [contact me](https://www.linkedin.com/in/
 ```
 ├── data                                <- Source data .csv files
 ├── images                              <- Exported Notebook visualizations
-├── README.md                           <- The top-level README for reviewers of this project
+├── environment.yml                     <- Environment .yml file for reproducibility
 ├── main_notebook.ipynb                 <- Technical and narrative documentation in Jupyter Notebook
+├── main_notebook.ipynb                 <- Technical and narrative documentation in Jupyter Notebook
+├── requirements.txt                    <- Requirements .txt file for reproducibility
 ├── spotify_authorization.py            <- Spotify authorization function to call in Main Notebook
 └── project_presentation.pdf            <- PDF version of project presentation
 ```
