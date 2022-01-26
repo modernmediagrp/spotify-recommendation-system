@@ -58,7 +58,7 @@ While the scores of each algorithm or function are used to create the "mathemati
 
 1. The first recommended song is so similar to the reference that DJs have made mashups of the 2 songs. From the similar instrumentation to the nearly-identical syncopated arpeggio, everything about this recommendation is spot-on.
 2. The second recommended song captures the essence and energy of the reference while not sounding the exact same.
-3. Interestingly, the third recommendation is a song from the same artist released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being identified within the audio features.
+3. Interestingly, the third recommendation is a song from the same artist and released in the same year as the reference. Release year and artist are not a part of the modeled data so the similarity is being identified within the audio features.
 
 https://user-images.githubusercontent.com/92393233/150801538-f8de7952-568c-4539-a5c9-7e9a8cc540dc.mp4
 
@@ -95,7 +95,6 @@ For additional questions, feel free to [contact me](mailto:paullindquist@fastmai
 ├── data                                <- Source data .csv files
 ├── images                              <- Exported Notebook visualizations
 ├── environment.yml                     <- Environment .yml file for reproducibility
-├── main_notebook.ipynb                 <- Technical and narrative documentation in Jupyter Notebook
 ├── main_notebook.ipynb                 <- Technical and narrative documentation in Jupyter Notebook
 ├── requirements.txt                    <- Requirements .txt file for reproducibility
 ├── spotify_authorization.py            <- Spotify authorization function to call in Main Notebook
