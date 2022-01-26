@@ -88,7 +88,7 @@ Should this project be continued, the following next steps could be explored:
 ## For More Information
 Please review the full analysis in my [Jupyter Notebook](./main_notebook.ipynb) or [presentation deck](./project_presentation.pdf).
 
-For additional questions, feel free to [contact me](https://www.linkedin.com/in/paul-lindquist/).
+For additional questions, feel free to [contact me](mailto:paullindquist@fastmail.com).
 
 ## Respository Structure
 ```
