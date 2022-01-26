@@ -49,7 +49,7 @@ The final dataset has just under 23,000 songs spanning 128 sub-genres. It comes 
 ### Modeling
 Recommendations are made by testing numerous modeling algorithms and functions, all similarity and distance-based. Cosine similarity and K-Nearest Neighbors yield the most consistent results while the sigmoid kernel provides some valid recommendations with a bit of variety. The other kernel functions (x², linear, polynomial, etc.) don't produce many varying recommendations from those of cosine similarity or sigmoid kernel so they aren't used in the final model function.
 
-![models](./images/modeling.png)
+![models](./images/models.png)
 
 While the scores of each algorithm or function are used to create the "mathematically most similar" recommendations, what really matters is how the songs sound when compared to the provided reference song. As such, the results are somewhat subjective.
 
