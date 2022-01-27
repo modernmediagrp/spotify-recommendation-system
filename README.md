@@ -18,7 +18,7 @@ Spotify is chosen as the singular data-gathering platform for a few reasons:
 3. Their [Web API](https://developer.spotify.com/documentation/web-api/) is accessible and well-documented
 4. Songs are tagged with identifiers like ID and URI for organized tracking
 
-The following Spotify audio features are extracted and used as features for determining similarity for recommendation. Refer to the [documentation](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features) for an in-depth explanation of each:
+The following Spotify audio features are extracted and used in determining similarity for recommendation. Refer to the [documentation](https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features) for an in-depth explanation of each:
 - Acousticness, danceability, energy, instrumentalness, liveness, loudness, speechiness, tempo (BPM), valence
 
 Musical features like key and mode are purposefully omitted because there are separate third-party applications (e.g. [Mixed in Key](https://mixedinkey.com/)) that can hard-tag songs with that information. Many DJs do this and will already have it available during song selection. Also, and perhaps more importantly, making recommendations based on a song's key can lead to a string of songs that sound too familiar. Over time, this tends to create a tired listening experience.
