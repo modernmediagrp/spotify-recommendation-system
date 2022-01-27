@@ -47,11 +47,11 @@ The final dataset has just under 23,000 songs spanning 128 sub-genres. It comes 
 ![all_songs](./images/scatter_tl.jpg)
 
 ### Modeling
-Recommendations are made by testing numerous modeling algorithms and functions, all similarity and distance-based. Cosine similarity and K-Nearest Neighbors yield the most consistent results while the sigmoid kernel provides some valid recommendations with a bit of variety. The other kernel functions (linear, polynomial, x², etc.) don't produce many varying recommendations from those of cosine similarity or sigmoid kernel so they aren't used in the final model function.
+Recommendations are made by testing numerous modeling algorithms and functions, all similarity and distance-based. Cosine similarity and K-Nearest Neighbors yield the most consistent results while the sigmoid kernel provides valid recommendations with a bit of variety. The other kernel functions (linear, polynomial, x², etc.) don't produce many varying recommendations from those of cosine similarity or sigmoid kernel so they aren't used in the final model function.
 
 ![models](./images/models.png)
 
-While the scores of each algorithm or function are used to create the "mathematically most similar" recommendations, what really matters is how the songs sound when compared to the provided reference song. As such, the results are somewhat subjective.
+While the scores of each algorithm /function are used to create the "mathematically most similar" recommendations, what really matters is how the songs sound when compared to the provided reference song. As such, the results are somewhat subjective.
 
 ### The Recommendations
 ***Please note:*** *In the video comparisons below, the reference song is repeatedly played before each recommendation. This is so the ear can make a direct comparison with the reference song rather than the other recommendations. After all, live DJs are only looking for a next-song recommendation while another song is currently playing.*
@@ -63,7 +63,7 @@ While the scores of each algorithm or function are used to create the "mathemati
 https://user-images.githubusercontent.com/92393233/150801538-f8de7952-568c-4539-a5c9-7e9a8cc540dc.mp4
 
 A bit of a different approach is used for this next batch of recommendations. To test robustness, the final model function is input to recommend songs across all genres. Notice the reference song has a piano-heavy, Disco-infused-almost-throwback feel to it. Its energy is upbeat and its valence is positive.
-1. The first recommendation carries that same positivity and upbeat energy. Like the reference song, it also has vocals and a Disco-heavy bassline.
+1. The first recommendation carries that same positivity and upbeat energy. Like the reference song, it also has vocals and a Disco-inspired bassline.
 2. The second recommendation sounds the most dissimilar of all the recommendations. It has a few filtered instrumentation elements like the reference song but it's hard to describe its energy as upbeat or its valence as positive.
 3. The third recommendation also comes from quite a different sub-genre but its sound is energetic, positive and it too features vocals. It would be a nice change of pace from the reference song without sounding like there was no connection.
 
@@ -73,11 +73,11 @@ https://user-images.githubusercontent.com/92393233/150801555-a05639d5-7298-4dbc-
 The recommendation system is quite good. It's able to provide a variety of recommendations that include both songs with exactness in sound and songs with similar energy, danceability and valence. Given the number of results within the scope of the provided reference song, there's a strong likelihood a DJ would be able to select a song from the list of recommendations. Remember, it only takes 1 usable song for the recommendation system to successfully achieve its objective.
 
 ## Limitations
-There are a few limitations encountered over the life of this project:
-1. The data relies heavily on the original tagging of audio features and sub-genre for making recommendations. If, for whatever reason, a song's sub-genre, danceability, etc. wasn't initially tagged properly, the recommendations will reflect those deficiencies.
+There are a few limitations with this project:
+1. The data relies heavily on the original tagging of sub-genre and audio features for making recommendations. If, for whatever reason, a song's sub-genre, danceability, etc. wasn't initially tagged properly, the recommendations will reflect those deficiencies.
 2. The final dataset only includes just under 23,000 songs. This is likely a severe underrepresentation of electronic dance music from Spotify's 70 million song database.
 3. The final dataset is also static, in that it includes data from other raw datasets and isn't exclusively derived from Spotify API calls. Over time, the data will become outdated and new releases won't be represented in the data, both for reference and recommendation.
-4. Recommendations for sub-genres like Tech House and Techno, where audio features vary and songs are harder to classify, aren't very strong. It's unsurprising given the ambiguity of the sub-genres' features but it still yields weaker recommendations.
+4. Recommendations for sub-genres like Tech House and Techno, where audio features vary and songs are harder to classify, aren't as consistent. It's unsurprising given the ambiguity of the sub-genres' features but it still yields weaker recommendations.
 
 ## Next Steps
 Should this project be continued, the following next steps could be explored:
@@ -94,9 +94,10 @@ For additional questions, feel free to [contact me](mailto:paullindquist@fastmai
 ```
 ├── data                                <- Source data .csv files
 ├── images                              <- Exported Notebook visualizations
+├── README.md                           <- Top-level README for reviewers of this project
 ├── environment.yml                     <- Environment .yml file for reproducibility
 ├── main_notebook.ipynb                 <- Technical and narrative documentation in Jupyter Notebook
+├── project_presentation.pdf            <- PDF version of project presentation
 ├── requirements.txt                    <- Requirements .txt file for reproducibility
-├── spotify_authorization.py            <- Spotify authorization function to call in Main Notebook
-└── project_presentation.pdf            <- PDF version of project presentation
+└── spotify_authorization.py            <- Spotify authorization function to call in Main Notebook
 ```
