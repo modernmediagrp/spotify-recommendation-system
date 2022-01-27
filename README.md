@@ -24,7 +24,7 @@ The following Spotify audio features are extracted and used in determining simil
 Musical features like key and mode are purposefully omitted because there are separate third-party applications (e.g. [Mixed in Key](https://mixedinkey.com/)) that can hard-tag songs with that information. Many DJs do this and will already have it available during song selection. Also, and perhaps more importantly, making recommendations based on a song's key can lead to a string of songs that sound too familiar. Over time, this creates a tired listening experience.
 
 ## Business Objective
-This project set out to make a recommendation system for electronic dance music, specifically with live DJ'ing in mind. It can assist DJs with tracklist preparation or live DJ performance. Often only 1 song is needed to fill out a set, create a bridge between 2 songs or inspire a line of thinking that allows the DJ to come up with the next song on their own. This recommendation system can assist that process.
+This project sets out to make a recommendation system for electronic dance music, specifically with live DJ'ing in mind. It can assist DJs with tracklist preparation or live DJ performance. Often only 1 song is needed to fill out a set, create a bridge between 2 songs or inspire a line of thinking that allows the DJ to come up with the next song on their own. This recommendation system can assist that process.
 
 Sometimes a DJ wants variety and would like to play a song that's categorized by a different sub-genre than the song currently being played. The final model function gives the option to provide recommendations within the same sub-genre or across all sub-genres.
 
