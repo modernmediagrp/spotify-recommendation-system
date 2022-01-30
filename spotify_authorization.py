@@ -13,8 +13,8 @@ to navigate Spotify's API.
 import tekore as tk
 
 def authorize():
-    client_id = '4eb9684aba474efa92f55be38917497e'
-    client_secret = '80f447a4ac9a40ef99dac84fc345e3b9'
+    client_id = 'ID_REDACTED' # Redacted API IDs for privacy reasons
+    client_secret = 'ID_REDACTED' # Redacted API IDs for privacy reasons
     app_token = tk.request_client_token(client_id, client_secret)
     return tk.Spotify(app_token)
 
