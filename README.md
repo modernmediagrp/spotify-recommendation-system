@@ -51,7 +51,7 @@ Recommendations are made by testing numerous modeling algorithms and functions, 
 
 ![models](./images/models.png)
 
-While the scores of each algorithm /function are used to create the "mathematically most similar" recommendations, what really matters is how the songs sound when compared to the provided reference song. As such, the validity of the results are somewhat subjective.
+While the scores of each algorithm/function are used to create the "mathematically most similar" recommendations, what really matters is how the songs sound when compared to the provided reference song. As such, the validity of the results are somewhat subjective.
 
 ### The Recommendations
 ***Please note:*** *In the video comparisons below, the reference song is repeatedly played before each recommendation. This is so the ear can make a direct comparison with the reference song rather than the other recommendations. After all, live DJs are only looking for a next-song recommendation while another song is currently playing.*
