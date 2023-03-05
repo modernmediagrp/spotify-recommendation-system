@@ -1,6 +1,5 @@
-![banner](./images/knobs.jpeg)
+
 # *Live DJ Assist: Using Spotify to Build a Recommendation System for DJ'ing Electronic Dance Music*
-Author: [Paul Lindquist](https://www.linkedin.com/in/paul-lindquist/)
 
 ## Background
 Electronic dance music is overwhelmingly created with computers and plugins rather than instruments and live recordings. It's typically distributed digitally, opting for high-quality .wav, .aiff and .mp3 files over CDs and vinyl. As such, thousands of new songs are released every day. This presents a challenge for any DJ or music curator seeking to keep their library current without drowning in new releases. To complicate matters further, the music isn't centralized. Releases are sold on numerous online stores like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/) and [Bandcamp](https://bandcamp.com/) or given away for free on platforms like [Soundcloud](https://soundcloud.com/). Crate digging has long since moved to the digital space and it's easy to get overwhelmed.
@@ -84,11 +83,6 @@ Should this project be continued, the following next steps could be explored:
 1. Expanding the data through additional Spotify API calls
 2. Importing new data, through API calls or web scraping, using an electronic music-specific store like [Beatport](https://www.beatport.com/), [Juno Download](https://www.junodownload.com/), [Traxsource](https://www.traxsource.com/), etc.
 3. Deploying the final model function to a mobile app, or at least a mobile-responsive application like [Streamlit](https://streamlit.io/), so DJs can access recommendations on their phones while mixing
-
-## For More Information
-Please review the full analysis in my [Jupyter Notebook](./main_notebook.ipynb) or [presentation deck](./project_presentation.pdf).
-
-For additional questions, feel free to [contact me](mailto:paullindquist@fastmail.com).
 
 ## Respository Structure
 ```
